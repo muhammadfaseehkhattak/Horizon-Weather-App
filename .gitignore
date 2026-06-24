@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- CRITICAL MISSING RULES FOR WEATHER APP ---
+
+# 1. Block the local SQLite Database files
+*.db
+*.sqlite3
+weather.db
+weather-backend/weather.db
+
+# 2. Block Vite/React Frontend Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
